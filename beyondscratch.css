@@ -1,0 +1,296 @@
+/**************************************/
+/* /r/beyondscratch custom stylesheet */
+/* DO NOT STEAL!                      */
+/**************************************/
+body {
+  background: #fff;
+  color: #000;
+  height: auto;
+  min-height: 100%;
+  font-family: Open Sans, Roboto, Fira Sans, Helvetica Neue, Helvetica, Arial, sans-serif;
+}
+body ::selection {
+  color: #fff;
+  background-color: #f90;
+}
+body .avatar img {
+  border-radius: 3px;
+}
+body #content {
+  padding-top: 6em;
+}
+body #sr-header-area {
+  border-bottom: 0;
+  text-transform: capitalize;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+}
+body #header {
+  border-bottom: none;
+  background: #25aff4;
+}
+body #header-bottom-left {
+  min-height: 51px;
+  box-shadow: 0 0 3px rgba(0,0,0,0.25);
+  position: relative;
+}
+body #header-bottom-left .redditname {
+  position: absolute;
+  top: -16px;
+  left: 8px;
+  z-index: -1;
+}
+body #header-bottom-left .redditname::after {
+  z-index: 10;
+  content: '/r/beyond';
+  display: block;
+  font-weight: 500;
+  font-variant: initial;
+  font-size: 10px;
+  position: absolute;
+  top: 35px;
+  left: -4px;
+  font-weight: 600;
+  color: #fff;
+  text-decoration: none;
+}
+body #header-bottom-left #header-img {
+  background-size: 81px;
+  background-position: 56px center;
+  padding-right: 64px;
+  width: 80px;
+  height: 51px;
+  margin: 0;
+  background-image: url("%%scratch-logo%%");
+}
+body > .side {
+  box-shadow: none;
+}
+body .tabmenu {
+  margin: 0;
+  display: inline-block;
+  box-shadow: none;
+  height: 50px;
+  background-color: #25aff4;
+}
+body .tabmenu li {
+  border: none;
+  height: 50px;
+  margin: 0;
+  font-weight: 400;
+  display: inline-block;
+  line-height: 50px;
+  background: #25aff4;
+}
+body .tabmenu li:hover,
+body .tabmenu li.selected {
+  background: rgba(0,0,0,0.1);
+}
+body .tabmenu li > a {
+  position: relative;
+  border: none !important;
+  font-weight: 500;
+  color: #fff !important;
+  background: transparent !important;
+  font-size: 12px !important;
+  text-transform: capitalize;
+  margin: 0;
+  display: inline-block;
+  padding: 0 15px;
+  height: 50px;
+  line-height: 50px;
+  font-weight: 400;
+  color: #fff;
+}
+body #header-bottom-right {
+  background: transparent;
+  padding: 0;
+  height: 24px;
+  line-height: 24px;
+  border-top-left-radius: 0;
+  padding: 0 1em;
+  display: flex;
+}
+body #header-bottom-right > * {
+  height: 24px;
+  line-height: 24px;
+}
+body #header-bottom-right a {
+  color: #fff !important;
+  font-weight: normal !important;
+}
+body #header-bottom-right .user {
+  color: rgba(255,255,255,0.8);
+}
+body #header-bottom-right .user .userkarma {
+  font-weight: normal;
+}
+body #header-bottom-right .separator {
+  color: transparent;
+  margin: 0 0.4em;
+}
+body #header-bottom-right #mail {
+  background-image: url("%%nav-notifications%%");
+  background-position: center center;
+  background-size: 16px;
+  width: 16px;
+  height: 16px;
+}
+body #header-bottom-right #modmail {
+  background-image: url("%%mystuff%%");
+  background-position: center center;
+  background-size: 16px;
+  width: 16px;
+  margin-top: 4px;
+  height: 16px;
+}
+body .content {
+  box-shadow: none;
+}
+body .content .thing {
+  border-radius: 3px;
+  padding: 1em 0;
+  border-bottom: 1px solid rgba(0,0,0,0.05);
+}
+body .content .domain {
+  display: none;
+}
+body .content .entry .expando-button.selftext,
+body .content .entry .expando-button.selftext:hover {
+  background-image: url("%%dropdown%%");
+  background-position: center center;
+  background-size: 8px;
+  background-color: #f90;
+  border-radius: 100%;
+  margin: 0;
+  cursor: pointer;
+  transition: ease-out 40ms transform;
+}
+body .content .entry .tagline,
+body .content .entry .flat-list {
+  padding-left: 3em;
+}
+body .content .expando-button.selftext:hover {
+  transform: rotate(-90deg);
+}
+body .content .expando-button.selftext.expanded {
+  transform: rotate(-180deg);
+}
+body .content .thumbnail {
+  border-radius: 3px;
+}
+body .content .thumbnail.self {
+  background-image: url("%%404-giga%%");
+  background-position: center center;
+  background-size: contain;
+}
+body .content a[data-event-action*=marknsfw] {
+  display: none;
+}
+body .titlebox .subscribe-button .option,
+body .morelink {
+  box-shadow: none;
+  border: none !important;
+}
+body .button,
+body .button.grey,
+body button,
+body .morelink {
+  border: none;
+  background-image: none;
+  background-color: #25aff4;
+  border-radius: 3px;
+  outline: 0;
+  font-weight: 400;
+  font-size: 12px;
+  height: 32px;
+  box-shadow: 0 2px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12);
+  color: #fff !important;
+  text-transform: capitalize;
+  text-shadow: none;
+  padding: 0 1rem;
+  min-height: 32px;
+  line-height: 32px;
+  display: inline-block;
+  transition: box-shadow 0.3s ease-out;
+}
+body .button.small,
+body .button.grey.small,
+body button.small,
+body .morelink.small {
+  padding: 0 0.5rem;
+}
+body .button a,
+body .button.grey a,
+body button a,
+body .morelink a,
+body .button span,
+body .button.grey span,
+body button span,
+body .morelink span {
+  color: #fff;
+  letter-spacing: 0.1px;
+}
+body .button:focus,
+body .button.grey:focus,
+body button:focus,
+body .morelink:focus,
+body .button:active,
+body .button.grey:active,
+body button:active,
+body .morelink:active {
+  box-shadow: none;
+}
+body .button:hover,
+body .button.grey:hover,
+body button:hover,
+body .morelink:hover {
+  box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+}
+a.author {
+  margin-right: 0.1em;
+}
+.morelink .nub {
+  display: none;
+}
+body .button:hover,
+body .button.grey:hover,
+body button:hover,
+body .morelink:hover {
+  background-image: none;
+}
+.flair {
+  border: none;
+  color: #f90;
+  background: transparent;
+  margin: 0;
+}
+.flair.flair-u-matu {
+  background: url("%%matu-logo%%");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  vertical-align: middle;
+}
+.flair.flair-u-nanalan {
+  background: url("%%nanalan%%");
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  vertical-align: middle;
+}
+.flair.flair-u-quat {
+  color: #800080;
+  font-size: 200%;
+  transform: rotate(30deg);
+}
+.tagline a,
+.search-result-meta a {
+  color: #25aff4;
+}
+.link.last-clicked {
+  border: none;
+}

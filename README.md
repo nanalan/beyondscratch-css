@@ -1,2 +1,1 @@
-# beyondscratch-css
-/r/beyondscratch subreddit styling
+# [/r/beyondscratch stylesheet](https://www.reddit.com/r/beyondscratch/)
