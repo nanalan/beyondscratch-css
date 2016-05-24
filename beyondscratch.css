@@ -35,9 +35,18 @@ body #header-bottom-left {
 }
 body #header-bottom-left .redditname {
   position: absolute;
-  top: -16px;
-  left: 8px;
-  z-index: -1;
+  top: 0;
+  left: 0;
+  height: 51px;
+  width: 147px;
+  margin: 0;
+  z-index: 99;
+}
+body #header-bottom-left .redditname > a {
+  display: block;
+  width: 100%;
+  height: 100%;
+  color: transparent;
 }
 body #header-bottom-left .redditname::after {
   z-index: 10;
@@ -47,8 +56,8 @@ body #header-bottom-left .redditname::after {
   font-variant: initial;
   font-size: 10px;
   position: absolute;
-  top: 35px;
-  left: -4px;
+  top: 19px;
+  left: 4px;
   font-weight: 600;
   color: #fff;
   text-decoration: none;
